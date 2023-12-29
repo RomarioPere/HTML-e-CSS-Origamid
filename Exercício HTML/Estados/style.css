@@ -1,0 +1,21 @@
+*{
+
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Romário {
+  color: darkred;
+}
+.Alice {
+    color: blue;
+  }
+a{
+text-decoration: none;
+}
+p{
+  font-size: 20px;
+}
+h2 a{
+  color: seagreen;
+}
