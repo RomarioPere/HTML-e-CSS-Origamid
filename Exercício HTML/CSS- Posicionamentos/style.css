@@ -6,6 +6,7 @@ body {
   gap: 3.75rem;
   justify-items: center;
   margin-top: 3.75rem;
+  
 }
 
 img {
@@ -94,6 +95,14 @@ p {
   right: -1.87rem;
 }
 
+
+  .introducao-cover img{
+    height: 100%;
+    object-fit: cover;
+    object-position: top right;
+  }
+
+
 .botao {
   background: #e21;
   color: #fff;
@@ -114,6 +123,8 @@ p {
   padding: 2.5rem;
   align-self: center;
   background-image: url(03-css-posicionamento/03-css-posicionamento/0309-posicionamento-exercicio/img/onda.svg);
+  /* word-break: brek-all; serve para quebrar palavras. */
+  text-align: center;
 }
 
 .vantagens {
@@ -126,7 +137,8 @@ p {
   grid-template-columns: auto 1fr;
   gap: 0.62rem 1.25rem;
   padding: 1.25rem;
-  border-left: 0.25rem solid white
+  border-left: 0.25rem solid white;
+  /* word-break: break-all; serve para quebrar palavras. */
 }
 
 .vantagens-item:nth-child(odd) {
@@ -147,4 +159,33 @@ p {
   text-align: center;
   padding: 2.5rem;
   box-sizing: border-box;
+}
+
+@media (max-width: 970px) {
+  body {
+  gap: 1.87rem;
+  margin-top: 1.25rem;
+  }
+  .conteudo-vantagem {
+    grid-template-columns: 1fr;
+  }
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+  .introducao{
+    text-align: left;
+    justify-items: start;
+  }
+  .introducao::before {
+    display: none;
+  }
+  .subtitulo {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .subtitulo{
+    font-size: 2rem;
+  }
 }
